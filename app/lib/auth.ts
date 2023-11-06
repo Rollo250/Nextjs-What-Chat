@@ -6,7 +6,7 @@ import { prisma } from "./db";
 
 export const authOptions: NextAuthOptions = {
   // @ts-ignore
-  adapter: PrismaAdapter(prisma),
+  adapter: PrismaAdapter(prisma), 
   providers: [
     GithubProvider({
       clientId: process.env.GITHUB_CLIENT_ID as string,
